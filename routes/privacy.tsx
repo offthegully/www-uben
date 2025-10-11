@@ -25,7 +25,7 @@ export default define.page(function PrivacyPolicy() {
           </p>
         </header>
 
-        <section class="space-y-8">
+        <section class="space-y-10">
           <p class="text-base text-slate-700">
             Uben is an iOS application designed to help you learn with
             intention. We prioritize your privacy and keep our data practices
@@ -33,179 +33,196 @@ export default define.page(function PrivacyPolicy() {
             intended to align with Apple’s App Store Review Guidelines.
           </p>
 
+          <div class="space-y-4">
+            <h2 class="text-2xl font-semibold text-slate-900">1. Scope</h2>
+            <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
+              <li>
+                This policy explains how our iOS application Uben and our website at [your domain] collect, use, and share information.
+              </li>
+              <li>
+                It covers app users and website visitors. If a term differs between the app and website, we state it explicitly.
+              </li>
+            </ul>
+          </div>
+
           <div class="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-6">
-            <h2 class="text-2xl font-semibold text-slate-900">App Store Privacy Summary</h2>
-            <p class="text-base text-slate-700">
-              The following summarizes how Uben handles data, as displayed on
-              our App Store product page:
-            </p>
+            <h2 class="text-2xl font-semibold text-slate-900">2. Summary For App Store Review</h2>
             <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
               <li>
-                <span class="font-medium text-slate-900">Data Collected:</span>
-                &nbsp;Yes — limited, anonymous usage events (swipe interactions and content IDs seen) and a random app‑scoped identifier.
+                <span class="font-medium text-slate-900">Data Collection:</span>
+                &nbsp;We collect a random app‑scoped identifier, usage events (impressions/swipes, likes/bookmarks), and search terms. We do not collect contact info, precise location, or sensitive categories.
               </li>
               <li>
-                <span class="font-medium text-slate-900">Data Linked to You:</span>
-                &nbsp;None.
+                <span class="font-medium text-slate-900">Data Linking:</span>
+                &nbsp;Not linked to your identity (no login/account). Events are associated with a pseudonymous device ID.
               </li>
               <li>
-                <span class="font-medium text-slate-900">Data Used to Track You:</span>
-                &nbsp;None. Uben does not track you across apps or websites owned by other companies and does not use device advertising identifiers.
+                <span class="font-medium text-slate-900">Tracking Across Apps:</span>
+                &nbsp;No cross‑app/website tracking. We do not use IDFA and do not request ATT.
               </li>
               <li>
-                <span class="font-medium text-slate-900">On‑Device vs Server:</span>
-                &nbsp;Your saved history remains on device. We send anonymized swipe signals and a random app‑scoped ID to our service to avoid repeats and keep content fresh.
+                <span class="font-medium text-slate-900">Third‑Party SDKs:</span>
+                &nbsp;None for analytics/ads. We use Supabase (managed Postgres/Storage/functions) as backend infrastructure.
               </li>
             </ul>
-            <p class="text-sm text-slate-500">
-              If our practices change, we will update both this policy and our
-              App Store privacy responses before publishing an update.
-            </p>
           </div>
 
           <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">Data Categories & Purposes (Apple)</h2>
-            <p class="text-base text-slate-700">
-              For App Store Connect, Uben’s current disclosures are:
-            </p>
+            <h2 class="text-2xl font-semibold text-slate-900">3. Information We Collect</h2>
+            <ul class="list-disc space-y-3 pl-6 text-base text-slate-700">
+              <li>
+                <span class="font-medium text-slate-900">Device Identifier (pseudonymous):</span>
+                &nbsp;A random UUID stored in iOS Keychain to prevent duplicates, reduce abuse, and enable session continuity. Not your Apple ID/IDFA; used only within our service and may persist across reinstalls.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">Usage Data:</span>
+                &nbsp;Article impressions and reactions (viewed, liked, bookmarked, dismissed), timestamps, minimal context to operate feeds and avoid repeats, and search terms to return relevant results.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">App Preferences & Local History:</span>
+                &nbsp;Theme preference and local session history (viewed items), likes, and bookmarks stored on‑device. You can clear this in‑app.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">Network/Log Data:</span>
+                &nbsp;Standard network information (e.g., IP address, device type) may be processed by hosting/infrastructure partners to deliver content and secure the service.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">No Sensitive/Intrusive Data:</span>
+                &nbsp;We do not request or collect precise location, contacts, photos, camera, microphone, health, or motion data. We do not collect advertising identifiers (IDFA) and do not show personalized ads.
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <h2 class="text-2xl font-semibold text-slate-900">4. How We Use Information</h2>
             <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
               <li>
-                <span class="font-medium text-slate-900">Identifiers (Not Linked to You):</span>
-                &nbsp;Random app‑scoped ID — used for <span class="italic">App Functionality</span> (deduping content). Not used for tracking.
+                <span class="font-medium text-slate-900">Provide and Improve the Service:</span>
+                &nbsp;Deliver content and images; protect content links; prevent duplicate recommendations and keep a fresh feed (e.g., via aggregated impressions).
               </li>
               <li>
-                <span class="font-medium text-slate-900">Usage Data (Not Linked to You):</span>
-                &nbsp;Product interaction (swipe events, content IDs seen) — used for <span class="italic">App Functionality</span> and may support non‑sensitive future <span class="italic">Product Personalization</span> within Uben only.
+                <span class="font-medium text-slate-900">Search:</span>
+                &nbsp;Handle your search queries to return relevant articles.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">Personalization (Limited and Non‑Tracking):</span>
+                &nbsp;Arrange content suggestions and avoid immediate repeats using pseudonymous interaction summaries. No cross‑app profiles, and we do not buy/sell audience segments.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">Security and Abuse Prevention:</span>
+                &nbsp;Use pseudonymous device identifiers and basic instrumentation to prevent abuse and maintain service quality.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">Legal Compliance:</span>
+                &nbsp;Comply with law and enforce our terms and policies.
               </li>
             </ul>
-            <p class="text-sm text-slate-500">
-              If we add new data types, purposes, or SDKs, we will update these
-              disclosures before release.
+          </div>
+
+          <div class="space-y-4">
+            <h2 class="text-2xl font-semibold text-slate-900">5. Legal Bases (EEA/UK)</h2>
+            <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
+              <li><span class="font-medium text-slate-900">Performance of a contract:</span>&nbsp;Provide the app and core features you request.</li>
+              <li><span class="font-medium text-slate-900">Legitimate interests:</span>&nbsp;Secure the service, measure quality (aggregated), prevent abuse, and understand usage to improve content delivery.</li>
+              <li><span class="font-medium text-slate-900">Consent:</span>&nbsp;Not required for current behaviors because we do not perform cross‑app tracking or collect sensitive categories. If this changes, we will request consent where required.</li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <h2 class="text-2xl font-semibold text-slate-900">6. Sharing and Disclosure</h2>
+            <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
+              <li>
+                <span class="font-medium text-slate-900">Service Providers (Processors):</span>
+                &nbsp;Supabase (database, storage, serverless functions) processes data on our behalf; some requests include a pseudonymous header (e.g., x‑device‑id) to deduplicate and secure content delivery. Apple and platform/CDN providers also process network‑level data to deliver the app and content.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">No Sale or Advertising Sharing:</span>
+                &nbsp;We do not sell personal information. We do not share data for cross‑context behavioral advertising.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">Legal/Compliance:</span>
+                &nbsp;We may disclose information if required by law, court order, or to protect rights, safety, or security.
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <h2 class="text-2xl font-semibold text-slate-900">7. Data Retention</h2>
+            <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
+              <li><span class="font-medium text-slate-900">On‑Device:</span>&nbsp;Likes, bookmarks, and viewed history remain on your device until you clear them in the app or uninstall the app.</li>
+              <li><span class="font-medium text-slate-900">Server‑Side:</span>&nbsp;Pseudonymous impression and search logs are retained only as long as needed to operate and improve the service and protect integrity. We may aggregate or delete old records.</li>
+            </ul>
+            <p class="text-base text-slate-700">To request deletion (or reset) of records keyed to your device ID, contact <a class="underline decoration-slate-400 underline-offset-4" href="mailto:offthegully@gmail.com">offthegully@gmail.com</a> and provide your in‑app device identifier.</p>
+          </div>
+
+          <div class="space-y-4">
+            <h2 class="text-2xl font-semibold text-slate-900">8. Security</h2>
+            <p class="text-base text-slate-700">
+              We use reasonable technical and organizational measures to protect data in transit and at rest, including TLS for transport and access controls on our infrastructure. No method of transmission or storage is completely secure.
             </p>
           </div>
 
           <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">Information We Store</h2>
+            <h2 class="text-2xl font-semibold text-slate-900">9. Your Choices and Controls</h2>
+            <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
+              <li><span class="font-medium text-slate-900">Clear Local Data:</span>&nbsp;Use in‑app controls to clear viewing history and related likes. You can also remove bookmarks individually.</li>
+              <li><span class="font-medium text-slate-900">Resetting the App:</span>&nbsp;Uninstalling the app removes on‑device data. The pseudonymous device ID is stored in Keychain and may persist across reinstalls; contact us to disassociate server‑side logs.</li>
+              <li><span class="font-medium text-slate-900">Do Not Track/ATT:</span>&nbsp;We do not engage in cross‑app tracking and do not request App Tracking Transparency permission.</li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <h2 class="text-2xl font-semibold text-slate-900">10. Your Rights</h2>
             <p class="text-base text-slate-700">
-              We keep a history of the cards you have viewed so that you can
-              revisit them later. This history is stored on your device. In
-              addition, the app sends anonymized swipe events and content IDs
-              you’ve seen, together with a random app‑scoped identifier, to our
-              service strictly to prevent duplicate cards and maintain content
-              freshness.
+              Depending on where you live, you may have rights to access, correct, delete, or export your information, or to object/restrict certain processing. Because we do not have accounts or direct identity information, requests may require you to provide the device identifier from the app so we can locate and delete server‑side records. To exercise rights, contact <a class="underline decoration-slate-400 underline-offset-4" href="mailto:offthegully@gmail.com">offthegully@gmail.com</a>.
             </p>
           </div>
 
           <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">Swipe Signals (Anonymous)</h2>
+            <h2 class="text-2xl font-semibold text-slate-900">11. Children’s Privacy</h2>
             <p class="text-base text-slate-700">
-              To avoid showing duplicate cards and to support eventual
-              non‑sensitive content recommendations, Uben records swipe signals
-              and the IDs of cards you have seen. These are sent with a random
-              app‑scoped identifier and are not linked to your identity. We do
-              not use this data for advertising or cross‑app tracking.
+              The app is not directed to children under 13 (or under the age of digital consent in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child provided data, contact us so we can delete it.
             </p>
           </div>
 
           <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">
-              Data Sharing
-            </h2>
+            <h2 class="text-2xl font-semibold text-slate-900">12. International Data Transfers</h2>
             <p class="text-base text-slate-700">
-              We do not sell, rent, or share your personal data. Because Uben
-              does not collect personally identifiable information, there is
-              nothing to share or disclose with third parties.
+              We may process and store data in the United States and other countries. Where required, we use appropriate safeguards for cross‑border transfers (e.g., Standard Contractual Clauses).
             </p>
           </div>
 
           <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">No Accounts; Random App‑Scoped ID</h2>
+            <h2 class="text-2xl font-semibold text-slate-900">13. Changes To This Policy</h2>
             <p class="text-base text-slate-700">
-              Uben does not require an account. We use a random identifier that
-              is scoped to this app to associate anonymous swipe events. It is
-              not based on your device identifier or Apple ID. We do not use
-              the IDFA and do not fingerprint devices.
+              We may update this policy to reflect changes to our practices. We will post the updated version with a new effective date. If we make material changes, we will provide additional notice in the app or on our website.
             </p>
           </div>
 
           <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">Third‑Party SDKs</h2>
-            <p class="text-base text-slate-700">
-              As of {LAST_UPDATED}, Uben does not include third‑party analytics
-              or advertising SDKs. If this changes, we will disclose the
-              integration and purposes and update the App Store privacy
-              responses accordingly before release.
-            </p>
+            <h2 class="text-2xl font-semibold text-slate-900">14. Contact</h2>
+            <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
+              <li>Email: <a class="underline decoration-slate-400 underline-offset-4" href="mailto:offthegully@gmail.com">offthegully@gmail.com</a></li>
+              <li>Address: [Company name and address]</li>
+            </ul>
           </div>
 
-          <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">Data Retention & Deletion</h2>
-            <p class="text-base text-slate-700">
-              On‑device history remains under your control. You can clear local
-              data by using app settings (if available) or by uninstalling the
-              app. Anonymous swipe events stored on our service are retained
-              only as needed to support deduplication and content freshness. To
-              request deletion or a reset of your random identifier, contact
-              <a class="ml-1 underline decoration-slate-400 underline-offset-4" href="mailto:offthegully@gmail.com">support</a>.
-              If you use Apple device backups or iCloud, Apple may store copies
-              as part of those services; we do not access that data.
-            </p>
-          </div>
-
-          <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">Security</h2>
-            <p class="text-base text-slate-700">
-              We rely on iOS system protections for local data storage. Because
-              Uben does not transmit personal data to our servers, there is no
-              remote data set for us to secure or retain.
-            </p>
-          </div>
-
-          <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">Children’s Privacy</h2>
-            <p class="text-base text-slate-700">
-              Uben does not collect personal data, and it is not directed to
-              children under 13. If our practices or audience change, we will
-              update this policy and our App Store disclosures.
-            </p>
-          </div>
-
-          <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">Changes to This Policy</h2>
-            <p class="text-base text-slate-700">
-              We may update this policy to reflect product changes, legal
-              requirements, or guidance from Apple. Material changes will be
-              posted here and reflected in our App Store privacy responses prior
-              to release.
-            </p>
-          </div>
-
-          <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">
-              Your Controls
-            </h2>
-            <p class="text-base text-slate-700">
-              You can reset your learning history at any time from within the
-              app settings. Doing so clears the locally stored history and swipe
-              data immediately.
-            </p>
-          </div>
-
-          <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">
-              Contact Us
-            </h2>
-            <p class="text-base text-slate-700">
-              If you have any questions about this privacy policy or how Uben
-              handles data, reach out at{" "}
-              <a
-                class="text-slate-900 underline decoration-slate-400 underline-offset-4 hover:text-slate-700"
-                href="mailto:offthegully@gmail.com"
-              >
-                offthegully@gmail.com
-              </a>
-              .
-            </p>
+          <div class="space-y-3 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <h2 class="text-2xl font-semibold text-slate-900">App Store Privacy “Nutrition” Mapping</h2>
+            <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
+              <li>
+                <span class="font-medium text-slate-900">Data Not Linked to You:</span>
+                &nbsp;Identifiers — Device ID (random, app‑scoped; used only within our service). Usage Data — Product Interaction (impressions, likes/bookmarks), and Search History/Queries.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">Not Collected:</span>
+                &nbsp;Contact Info, Health & Fitness, Financial Info, Precise Location, Contacts, User Content uploads, Browsing History outside the app, Sensitive Info.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">Tracking:</span>
+                &nbsp;Not performed. We do not link collected data to third‑party data for advertising, share data with data brokers, or track users across apps or websites.
+              </li>
+            </ul>
           </div>
         </section>
       </main>
