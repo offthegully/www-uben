@@ -55,5 +55,9 @@
     "types": [
       "vite/client"
     ]
+  },
+  "deploy": {
+    "org": "uben",
+    "app": "www-uben"
   }
 }

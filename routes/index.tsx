@@ -26,6 +26,9 @@ export default define.page(function Home() {
             <a class="text-slate-600 hover:text-slate-900" href="#contact">
               Contact
             </a>
+            <a class="text-slate-600 hover:text-slate-900" href="/privacy">
+              Privacy
+            </a>
           </nav>
         </div>
       </header>
@@ -96,9 +99,9 @@ export default define.page(function Home() {
                 description:
                   "Toggle concise takeaways generated from the real source data; they are not shown by default.",
               }, {
-                title: "No data collection",
+                title: "On-device privacy",
                 description:
-                  "We do not track you. Your history is stored only on your device.",
+                  "Your history stays on your device, and swipe signals are processed anonymously to avoid repeating cards.",
               }].map((feature) => (
                 <div
                   class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:border-transparent hover:shadow-lg"
@@ -142,6 +145,7 @@ export default define.page(function Home() {
           <div class="flex items-center gap-6">
             <a class="hover:text-slate-700" href="#content">Content Promise</a>
             <a class="hover:text-slate-700" href="#contact">Support</a>
+            <a class="hover:text-slate-700" href="/privacy">Privacy</a>
           </div>
         </div>
       </footer>
