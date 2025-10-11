@@ -47,9 +47,9 @@ export default define.page(function Home() {
                 Swipe smarter. Uben turns idle scrolling into daily learning.
               </h1>
               <p class="max-w-xl text-lg text-slate-600">
-                Discover concise educational cards. Glide
-                through topics, save what matters, and make your screen time
-                feel purposeful, anytime and anywhere.
+                Discover concise educational cards. Glide through topics, save
+                what matters, and make your screen time feel purposeful, anytime
+                and anywhere.
               </p>
               <div class="flex flex-wrap items-center gap-4">
                 <a
@@ -140,7 +140,8 @@ export default define.page(function Home() {
       <footer class="border-t border-slate-200 bg-white">
         <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-6 py-8 text-xs text-slate-500 sm:flex-row">
           <span>
-            Copyright {new Date().getFullYear()} OffTheGully. All rights reserved.
+            Copyright {new Date().getFullYear()}{" "}
+            OffTheGully. All rights reserved.
           </span>
           <div class="flex items-center gap-6">
             <a class="hover:text-slate-700" href="#content">Content Promise</a>

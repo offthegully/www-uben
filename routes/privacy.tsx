@@ -1,7 +1,7 @@
 import { Head } from "fresh/runtime";
 import { define } from "../utils.ts";
 
-const LAST_UPDATED = "May 13, 2024";
+const LAST_UPDATED = "Oct 11, 2025";
 
 export default define.page(function PrivacyPolicy() {
   return (
