@@ -42,7 +42,7 @@ export default define.page(function PrivacyPolicy() {
             <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
               <li>
                 <span class="font-medium text-slate-900">Data Collected:</span>
-                &nbsp;None. Uben does not collect data from your device.
+                &nbsp;Yes — limited, anonymous usage events (swipe interactions and content IDs seen) and a random app‑scoped identifier.
               </li>
               <li>
                 <span class="font-medium text-slate-900">Data Linked to You:</span>
@@ -53,8 +53,8 @@ export default define.page(function PrivacyPolicy() {
                 &nbsp;None. Uben does not track you across apps or websites owned by other companies and does not use device advertising identifiers.
               </li>
               <li>
-                <span class="font-medium text-slate-900">On‑Device Processing:</span>
-                &nbsp;Viewing history and swipe signals are processed on your device and are not transmitted to our servers.
+                <span class="font-medium text-slate-900">On‑Device vs Server:</span>
+                &nbsp;Your saved history remains on device. We send anonymized swipe signals and a random app‑scoped ID to our service to avoid repeats and keep content fresh.
               </li>
             </ul>
             <p class="text-sm text-slate-500">
@@ -64,24 +64,46 @@ export default define.page(function PrivacyPolicy() {
           </div>
 
           <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">
-              Information We Store
-            </h2>
+            <h2 class="text-2xl font-semibold text-slate-900">Data Categories & Purposes (Apple)</h2>
             <p class="text-base text-slate-700">
-              We keep a history of the cards you have viewed so that you can
-              revisit them later. This history is stored solely on your device
-              and never leaves it unless you back up your device through Apple’s
-              own services.
+              For App Store Connect, Uben’s current disclosures are:
+            </p>
+            <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
+              <li>
+                <span class="font-medium text-slate-900">Identifiers (Not Linked to You):</span>
+                &nbsp;Random app‑scoped ID — used for <span class="italic">App Functionality</span> (deduping content). Not used for tracking.
+              </li>
+              <li>
+                <span class="font-medium text-slate-900">Usage Data (Not Linked to You):</span>
+                &nbsp;Product interaction (swipe events, content IDs seen) — used for <span class="italic">App Functionality</span> and may support non‑sensitive future <span class="italic">Product Personalization</span> within Uben only.
+              </li>
+            </ul>
+            <p class="text-sm text-slate-500">
+              If we add new data types, purposes, or SDKs, we will update these
+              disclosures before release.
             </p>
           </div>
 
           <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">Swipe Signals (On‑Device Only)</h2>
+            <h2 class="text-2xl font-semibold text-slate-900">Information We Store</h2>
             <p class="text-base text-slate-700">
-              To avoid showing duplicate cards, Uben records swipe signals
-              solely on your device. These signals are not tied to your
-              identity, are not shared, and are not used for advertising or
-              cross‑app tracking. They exist only to manage content flow locally.
+              We keep a history of the cards you have viewed so that you can
+              revisit them later. This history is stored on your device. In
+              addition, the app sends anonymized swipe events and content IDs
+              you’ve seen, together with a random app‑scoped identifier, to our
+              service strictly to prevent duplicate cards and maintain content
+              freshness.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <h2 class="text-2xl font-semibold text-slate-900">Swipe Signals (Anonymous)</h2>
+            <p class="text-base text-slate-700">
+              To avoid showing duplicate cards and to support eventual
+              non‑sensitive content recommendations, Uben records swipe signals
+              and the IDs of cards you have seen. These are sent with a random
+              app‑scoped identifier and are not linked to your identity. We do
+              not use this data for advertising or cross‑app tracking.
             </p>
           </div>
 
@@ -97,12 +119,12 @@ export default define.page(function PrivacyPolicy() {
           </div>
 
           <div class="space-y-4">
-            <h2 class="text-2xl font-semibold text-slate-900">No Accounts or Identifiers</h2>
+            <h2 class="text-2xl font-semibold text-slate-900">No Accounts; Random App‑Scoped ID</h2>
             <p class="text-base text-slate-700">
-              Uben does not require you to create an account and does not use
-              persistent identifiers linked to you. We do not use the IDFA, do
-              not fingerprint devices, and do not link app data to your
-              identity.
+              Uben does not require an account. We use a random identifier that
+              is scoped to this app to associate anonymous swipe events. It is
+              not based on your device identifier or Apple ID. We do not use
+              the IDFA and do not fingerprint devices.
             </p>
           </div>
 
@@ -119,11 +141,14 @@ export default define.page(function PrivacyPolicy() {
           <div class="space-y-4">
             <h2 class="text-2xl font-semibold text-slate-900">Data Retention & Deletion</h2>
             <p class="text-base text-slate-700">
-              Viewing history and swipe signals persist only on your device and
-              remain under your control. You can clear them in the app settings
-              or by uninstalling the app. If you use Apple device backups or
-              iCloud, Apple may store copies as part of those services; we do
-              not access that data.
+              On‑device history remains under your control. You can clear local
+              data by using app settings (if available) or by uninstalling the
+              app. Anonymous swipe events stored on our service are retained
+              only as needed to support deduplication and content freshness. To
+              request deletion or a reset of your random identifier, contact
+              <a class="ml-1 underline decoration-slate-400 underline-offset-4" href="mailto:offthegully@gmail.com">support</a>.
+              If you use Apple device backups or iCloud, Apple may store copies
+              as part of those services; we do not access that data.
             </p>
           </div>
 

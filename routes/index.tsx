@@ -99,9 +99,9 @@ export default define.page(function Home() {
                 description:
                   "Toggle concise takeaways generated from the real source data; they are not shown by default.",
               }, {
-                title: "On-device privacy",
+                title: "Private by design",
                 description:
-                  "Your history stays on your device, and swipe signals are processed anonymously to avoid repeating cards.",
+                  "History stays on your device. We send anonymized swipe signals with a random ID to avoid repeats and keep content fresh — never for ads or cross‑app tracking.",
               }].map((feature) => (
                 <div
                   class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition hover:border-transparent hover:shadow-lg"
