@@ -7,10 +7,10 @@ export default define.page(function PrivacyPolicy() {
   return (
     <div class="min-h-screen bg-white text-slate-900">
       <Head>
-        <title>Privacy Policy | Uben</title>
+        <title>Privacy Policy | Fakta</title>
         <meta
           name="description"
-          content="Learn how the Uben iOS app handles your data with transparency and care."
+          content="Learn how the Fakta iOS app handles your data with transparency and care."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -27,7 +27,7 @@ export default define.page(function PrivacyPolicy() {
 
         <section class="space-y-10">
           <p class="text-base text-slate-700">
-            Uben is an iOS application designed to help you learn with
+            Fakta is an iOS application designed to help you learn with
             intention. We prioritize your privacy and keep our data practices
             straightforward. This policy explains our data practices and is
             intended to align with Apple’s App Store Review Guidelines.
@@ -37,7 +37,7 @@ export default define.page(function PrivacyPolicy() {
             <h2 class="text-2xl font-semibold text-slate-900">1. Scope</h2>
             <ul class="list-disc space-y-2 pl-6 text-base text-slate-700">
               <li>
-                This policy explains how our iOS application Uben and our website at [your domain] collect, use, and share information.
+                This policy explains how our iOS application Fakta and our website at [your domain] collect, use, and share information.
               </li>
               <li>
                 It covers app users and website visitors. If a term differs between the app and website, we state it explicitly.

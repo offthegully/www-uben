@@ -40,5 +40,5 @@
     ],
     "types": ["vite/client"]
   },
-  "deploy": { "org": "uben", "app": "www-uben" }
+  "deploy": { "org": "fakta", "app": "www-fakta" }
 }

@@ -6,10 +6,10 @@ export default define.page(function Home() {
   return (
     <div class="min-h-screen bg-white text-slate-900">
       <Head>
-        <title>Uben - Learn Without The Doom Scroll</title>
+        <title>Fakta - Learn Without The Doom Scroll</title>
         <meta
           name="description"
-          content="Uben is the iOS app cured for doom scrolling: swipe through curated cards, absorb fresh knowledge, and feel good about your screen time."
+          content="Fakta is the iOS app cured for doom scrolling: swipe through curated cards, absorb fresh knowledge, and feel good about your screen time."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -17,7 +17,7 @@ export default define.page(function Home() {
       <header class="border-b border-slate-200">
         <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
           <div class="flex items-center gap-3">
-            <span class="text-xl font-semibold tracking-tight">Uben</span>
+            <span class="text-xl font-semibold tracking-tight">Fakta</span>
           </div>
           <nav class="hidden items-center gap-8 text-sm font-medium sm:flex">
             <a class="text-slate-600 hover:text-slate-900" href="#content">
@@ -44,7 +44,7 @@ export default define.page(function Home() {
                 iOS | Learn with intention
               </div>
               <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-                Swipe smarter. Uben turns idle scrolling into daily learning.
+                Swipe smarter. Fakta turns idle scrolling into daily learning.
               </h1>
               <p class="max-w-xl text-lg text-slate-600">
                 Discover concise educational cards. Glide through topics, save
@@ -65,7 +65,7 @@ export default define.page(function Home() {
               <div class="relative w-full max-w-[11.5rem] overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.16)] sm:max-w-[13rem] lg:max-w-[14.5rem]">
                 <div class="pointer-events-none absolute left-1/2 top-3 h-5 w-20 -translate-x-1/2 rounded-full bg-slate-900/80" />
                 <img
-                  alt="Screenshot of the Uben iOS app interface"
+                  alt="Screenshot of the Fakta iOS app interface"
                   class="w-full object-cover"
                   src={asset("/discover_page.png")}
                 />
