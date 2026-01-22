@@ -1,14 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,700&family=Manrope:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 :root {
-  --fakta-accent: #59b0ad;
+  --fakta-accent: #5bb7b3;
+  --fakta-accent-soft: rgba(91, 183, 179, 0.2);
+  --fakta-accent-glow: rgba(91, 183, 179, 0.35);
+  --fakta-ink: #0b1f24;
+  --fakta-ink-soft: #2c4147;
+  --fakta-mist: #eef6f4;
+  --fakta-cream: #fbf3e7;
+  --fakta-sun: #f4b05e;
+  --fakta-sun-soft: rgba(244, 176, 94, 0.28);
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-body: "Manrope", "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
 }
 
 body {
-  font-family:
-    "SF Pro Display", "SF Pro Text", "Inter", "Helvetica Neue", Arial,
-    sans-serif;
+  font-family: var(--font-body);
   background-color: #ffffff;
-  color: #0f172a;
+  color: var(--fakta-ink);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.fakta-hero {
+  background:
+    radial-gradient(
+      1200px 540px at 12% -10%,
+      rgba(91, 183, 179, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+    900px 480px at 90% 0%,
+    rgba(244, 176, 94, 0.28),
+    transparent 55%
+  ),
+    linear-gradient(180deg, #f8fbfa 0%, #ffffff 70%);
+}
+
+.fakta-grid {
+  background-image:
+    linear-gradient(rgba(11, 31, 36, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 31, 36, 0.06) 1px, transparent 1px);
+  background-size: 36px 36px;
 }
